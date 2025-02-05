@@ -1,0 +1,49 @@
+= SPEC-1: Event Ticket Booking System  
+:sectnums:  
+:toc:  
+
+== Background  
+
+Event management platforms require robust and scalable systems to handle ticket sales 
+for concerts,
+conferences, and other events. Users demand a fast and reliable way to book tickets 
+concurrently, often leading to spikes in traffic when tickets are initially released.
+Given the high likelihood of events selling out, a waiting list system ensures that 
+users can still express interest and possibly receive tickets due to cancellations.  
+
+This project aims to design a Node.js-based RESTful API for handling event ticket bookings, 
+cancellations, and waiting list management.  
+
+== Requirements  
+
+Below are the system requirements categorized using the MoSCoW prioritization technique:  
+
+=== Must Have  
+
+- Initialize an event with a set number of available tickets.  
+- Allow users to book tickets concurrently, ensuring ticket integrity and preventing 
+overbooking.  
+- Maintain a waiting list for when tickets are sold out.  
+- Provide RESTful endpoints for the following functionalities:  
+  - Viewing available tickets  
+  - Viewing the waiting list  
+  - Booking tickets  
+  - Canceling tickets  
+- Handle ticket cancellations and automatically assign canceled tickets to waiting 
+list users in a fair manner (FIFO).
+- Save order details (including ticket status and user information) to a relational 
+database (RDBMS).  
+
+=== Should Have  
+
+- Basic input validation for ticket booking (e.g., checking available ticket count).  
+- Graceful failure handling for overbooked or canceled requests.  
+
+=== Could Have  
+
+- Logging and monitoring for API request patterns and booking activities.  
+- Secure APIs with token-based authentication (e.g., JWT).  
+
+=== Won't Have  
+
+- Payment processing or complex user authentication at this stage.  
