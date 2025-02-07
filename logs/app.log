@@ -30,3 +30,9 @@
 [2025-02-06T18:04:05.416Z] [31merror[39m: Unable to connect to the database: type "number" does not exist
 [2025-02-06T18:04:28.487Z] [32minfo[39m: Sync all models
 [2025-02-06T18:04:28.528Z] [31merror[39m: Unable to connect to the database: type "number" does not exist
+[2025-02-07T09:00:51.116Z] [32minfo[39m: Sync all models
+[2025-02-07T09:00:51.898Z] [32minfo[39m: Database connected successfully
+[2025-02-07T09:00:51.928Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T09:14:42.948Z] [32minfo[39m: Starting user registration...
+[2025-02-07T09:14:44.425Z] [32minfo[39m: New user created with email: taiwo@gmail.com
+[2025-02-07T09:14:44.427Z] [32minfo[39m: User registered successfully with email: taiwo@gmail.com
