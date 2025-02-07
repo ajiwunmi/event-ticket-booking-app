@@ -14,9 +14,12 @@ export const sequelize = new Sequelize(config.database, config.user, config.pass
 export const connect_db = async () => {
     // console.log("Connecting to the database...", {...config});
     try {
-        await sequelize.authenticate();
-        console.log("DB Connection has been established successfully.");
-    } catch (error) {
+			await sequelize.authenticate();
+			console.log("DB Connection has been established successfully.");
+			// Sync all models
+			await sequelize.sync({ force: false }); 
+			console.log("All models were synchronized successfully.");
+		} catch (error) {
         console.error("Unable to connect to the database:", error);
     }
 };
