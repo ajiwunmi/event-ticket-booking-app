@@ -27,3 +27,7 @@ export const db_config = {
 		dialect: process.env.DB_DIALECT,
 	}
 };
+
+export const jwtConfig = {
+		secretkey : process.env.JWT_SECRET_KEY
+	}
