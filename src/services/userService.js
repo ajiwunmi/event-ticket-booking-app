@@ -3,14 +3,16 @@ import constants from "../constants/index.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { jwtConfig } from "../config/index.js";
-import AppError from "../utils/AppError.js"; // Custom AppError class
-import logger from "../utils/logger.js"; // Import logger
+import AppError from "../utils/AppError.js"; 
+import logger from "../utils/logger.js"; 
+import { handleError } from "../utils/errorHandler.js";
 
 const SECRET_KEY = jwtConfig.secretkey;
 
 // New user sign-up
 export const signupService = async (serviceData) => {
 	let { password, email } = serviceData;
+	
 	try {
 		logger.debug(`Attempting to find user with email: ${email}`);
 
@@ -19,22 +21,62 @@ export const signupService = async (serviceData) => {
 		});
 
 		if (existingUser) {
-			logger.warn(`User with email ${email} already exists.`);
-			throw new AppError("User with provided email already exists", 409); // Conflict error
+			logger.error(`User with email ${email} already exists.`);
+			throw new AppError(
+				`User with provided email:${email} already exists`,
+				409
+			); 
 		}
 
 		logger.debug(`Hashing password for user: ${email}`);
 		serviceData.password = await bcrypt.hash(password, 12);
 
 		const newUser = await UserModel.create(serviceData);
-
 		logger.info(`New user created with email: ${email}`);
 		return newUser;
 	} catch (err) {
-		logger.error(`Error during signup for email ${email}: ${err.message}`);
-		throw new AppError("Unable to create user, please try again.", 500); // Internal Server Error
+		
+		handleError(err, `Unexpected error during signup for email ${email}: ${err.message}`);
+		
 	}
 };
+
+export const loginService = async ({email, password}) => {
+	
+	try {
+		logger.debug(`Attempting to find user with email: ${email}`);
+
+		const user = await UserModel.findOne({ where: { email } });
+		if (!user) {
+			logger.error(constants.userMessage.INVALID_LOGIN_CREDENTIALS);
+			throw new AppError(constants.userMessage.INVALID_LOGIN_CREDENTIALS, 401); 
+		}
+		const isValid = await bcrypt.compare(password, user.password);
+		
+		if (!isValid) {			
+			logger.error(constants.userMessage.INVALID_LOGIN_CREDENTIALS);
+			throw new AppError(constants.userMessage.INVALID_LOGIN_CREDENTIALS, 401); 
+		}
+
+		const token = jwt.sign(
+			{ user: user.email, name: user.firstname + " " + user.lastname },
+			SECRET_KEY,
+			{
+				expiresIn: "4h",
+			}
+		);
+		logger.info(`user authenticated and login token generated`);		
+		return token;		
+		
+	} catch (err) {
+		handleError(
+			err,
+			`Unexpected error during login ${err.message}`
+		);
+	}
+};
+ 
+
 
 //Update User
 // module.exports.updateUser = async (serviceData) => {
@@ -125,45 +167,6 @@ export const signupService = async (serviceData) => {
 // 	}
 // };
 
-// module.exports.login = async ({ email, password }) => {
-// 	try {
-// 		const user = await UserModel.findOne({ where: { email } });
-// 		if (!user) {
-// 			throw new Error(constants.userMessage.INVALID_LOGIN_CREDENTIALS);
-// 		}
-// 		const userActive = await UserModel.findOne({
-// 			where: { [Op.and]: [{ active: "N" }, { email: user.email }] },
-// 		});
-
-// 		if (userActive) {
-// 			throw new Error("User is not Active");
-// 		}
-// 		const isValid = await bcrypt.compare(password, user.password);
-// 		if (!isValid) {
-// 			throw new Error(constants.userMessage.INVALID_LOGIN_CREDENTIALS);
-// 		}
-// 		let usergroups = await userGroupSchema.findAll({
-// 			where: { user: user.email },
-// 		});
-// 		let groups = [];
-// 		usergroups.forEach((usergroup) => {
-// 			groups.push(usergroup.dataValues.group);
-// 		});
-
-// 		const token = jwt.sign(
-// 			{ user: user.email, staffName: user.name, groups, station: user.station },
-// 			keys.SECRET_KEY || "my-secret-key",
-// 			{
-// 				expiresIn: "4h",
-// 			}
-// 		);
-
-// 		return token;
-// 	} catch (err) {
-// 		console.log("Oops... something went wrong: service : login", err);
-// 		throw new Error(err);
-// 	}
-// };
 
 // //GET ITEMS
 // module.exports.getAllItems = async ({}) => {

@@ -1,11 +1,12 @@
 import express from "express";
-import { newUserSchema } from "../schemas/userSchema.js";
-import { registerUser } from "../controllers/userController.js";
+import { newUserSchema, loginSchema } from "../schemas/userSchema.js";
+import { registerUser, loginUser } from "../controllers/userController.js";
 import { validateBody } from "../middlewares/joiSchemaValidation.js";
 // import tokenValidation from "../middleware/tokenValidation";
 
 const router = express.Router();
 router.post("/signup", validateBody(newUserSchema), registerUser);
+router.post("/login", validateBody(loginSchema), loginUser);
 // router
 // 	.get("/signup", userController.signUpInfo)
 // 	.post(
@@ -23,11 +24,7 @@ router.post("/signup", validateBody(newUserSchema), registerUser);
 // 		userController.updatePassword
 // 	)
 
-// 	.post(
-// 		"/login",
-// 		joieSchemaValidation.validateBody(userSchema.login),
-// 		userController.login
-// 	)
+// 	
 // 	.post("/user", tokenValidation.validateToken, userController.viewUser)
 // 	.get("/users", tokenValidation.validateToken, userController.listUsers);
 

@@ -1,4 +1,4 @@
-import { signupService } from "../services/userService.js";
+import { signupService, loginService } from "../services/userService.js";
 import constants from "../constants/index.js";
 import AppError from "../utils/AppError.js"; // Custom AppError class
 import logger from "../utils/logger.js"; // Import logger
@@ -21,25 +21,33 @@ export const registerUser = async (req, res, next) => {
 			.json({ message: response.message, body: response.body });
 	} catch (err) {
 		logger.error(`Error during user registration: ${err.message}`);
-		return next(new AppError(err.message, 400)); // Pass the error to the error handler
+		return next(new AppError(err.message, 400)); 
 	}
 };
 
-// export const new_user = async (req, res) => {
-// 	const { firstname,lastname, password, email } = req.body;
-// 	try {
-// 		const hashedPassword = await bcrypt.hash(password, 10);
-// 		const user = await User.create({
-// 			firstname,
-// 			lastname,
-// 			password: hashedPassword,
-// 			email,
-// 		});
+//login
+export const loginUser = async (req, res, next ) => {
+	logger.info("Starting user login...");
 
-// 	} catch (error) {
-// 		res.status(500).json({ error: error.message });
-// 	}
-// };
+ 	let response = { ...constants.defaultServerResponse };
+ 	try {
+ 		const token = await loginService(req.body);
+ 		
+ 		response.status = 200;
+ 		response.message = constants.userMessage.LOGIN_SUCCESS; 		
+
+		logger.info(`User logged in successfully`);
+		return res
+			.status(response.status)
+			.json({ message: response.message, token:token });
+ 		
+ 	} catch (err) {
+ 		logger.error(`Error during user login : ${err.message}`);
+		return next(new AppError(err.message, 400)); 
+ 	}
+ 	
+ };
+
 
 // exports.loginUser = async (req, res) => {
 // 	const { username, password } = req.body;
@@ -118,23 +126,7 @@ export const registerUser = async (req, res, next) => {
 // 	return res.status(response.status).send(response);
 // };
 
-// //login
-// module.exports.login = async (req, res) => {
-// 	let response = { ...constants.defaultServerResponse };
-// 	try {
-// 		const token = await userService.login(req.body);
-// 		const decoded = jwt.verify(token, keys.SECRET_KEY || "my-secret-key");
-// 		//req.body.userGroups = decoded.groups;
 
-// 		response.status = 200;
-// 		response.message = constants.userMessage.LOGIN_SUCCESS;
-// 		response.accessToken = token;
-// 		response.userGroups = decoded.groups;
-// 	} catch (err) {
-// 		response.message = err.message;
-// 	}
-// 	return res.status(response.status).send(response);
-// };
 
 // //fetch signup info
 // module.exports.signUpInfo = async (req, res) => {

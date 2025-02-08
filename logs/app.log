@@ -36,3 +36,130 @@
 [2025-02-07T09:14:42.948Z] [32minfo[39m: Starting user registration...
 [2025-02-07T09:14:44.425Z] [32minfo[39m: New user created with email: taiwo@gmail.com
 [2025-02-07T09:14:44.427Z] [32minfo[39m: User registered successfully with email: taiwo@gmail.com
+[2025-02-07T09:33:00.760Z] [32minfo[39m: Starting user registration...
+[2025-02-07T09:33:00.882Z] [33mwarn[39m: User with email taiwo@gmail.com already exists.
+[2025-02-07T09:33:00.883Z] [31merror[39m: Error during signup for email taiwo@gmail.com: User with provided email already exists
+[2025-02-07T09:33:00.884Z] [31merror[39m: Error during user registration: Unable to create user, please try again.
+[2025-02-07T09:33:18.935Z] [32minfo[39m: Starting user registration...
+[2025-02-07T09:33:19.086Z] [33mwarn[39m: User with email taiwo@gmail.com already exists.
+[2025-02-07T09:33:19.087Z] [31merror[39m: Error during signup for email taiwo@gmail.com: User with provided email already exists
+[2025-02-07T09:33:19.089Z] [31merror[39m: Error during user registration: Unable to create user, please try again.
+[2025-02-07T09:35:20.349Z] [32minfo[39m: Sync all models
+[2025-02-07T09:35:20.438Z] [32minfo[39m: Database connected successfully
+[2025-02-07T09:35:20.447Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T09:35:33.828Z] [32minfo[39m: Sync all models
+[2025-02-07T09:35:33.882Z] [32minfo[39m: Database connected successfully
+[2025-02-07T09:35:33.891Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T09:35:48.502Z] [32minfo[39m: Starting user registration...
+[2025-02-07T09:35:48.653Z] [33mwarn[39m: User with email taiwo@gmail.com already exists.
+[2025-02-07T09:35:48.656Z] [31merror[39m: Error during signup for email taiwo@gmail.com: User with provided email already exists
+[2025-02-07T09:35:48.657Z] [31merror[39m: Error during user registration: Unable to create user, please try again.
+[2025-02-07T09:36:47.297Z] [32minfo[39m: Sync all models
+[2025-02-07T09:36:47.356Z] [32minfo[39m: Database connected successfully
+[2025-02-07T09:36:47.367Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T09:37:56.775Z] [32minfo[39m: Sync all models
+[2025-02-07T09:37:56.839Z] [32minfo[39m: Database connected successfully
+[2025-02-07T09:37:56.848Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T09:43:58.027Z] [32minfo[39m: Sync all models
+[2025-02-07T09:43:58.085Z] [32minfo[39m: Database connected successfully
+[2025-02-07T09:43:58.094Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T09:45:34.681Z] [32minfo[39m: Sync all models
+[2025-02-07T09:45:34.730Z] [32minfo[39m: Database connected successfully
+[2025-02-07T09:45:34.738Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T09:59:45.308Z] [32minfo[39m: Sync all models
+[2025-02-07T09:59:45.355Z] [32minfo[39m: Database connected successfully
+[2025-02-07T09:59:45.361Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:00:26.223Z] [32minfo[39m: Sync all models
+[2025-02-07T10:00:26.270Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:00:26.277Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:00:38.629Z] [32minfo[39m: Sync all models
+[2025-02-07T10:00:38.679Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:00:38.687Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:05:34.633Z] [32minfo[39m: Sync all models
+[2025-02-07T10:05:34.815Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:05:34.896Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:06:22.792Z] [32minfo[39m: Sync all models
+[2025-02-07T10:06:22.855Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:06:22.881Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:06:35.321Z] [32minfo[39m: Sync all models
+[2025-02-07T10:06:35.379Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:06:35.388Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:07:08.615Z] [32minfo[39m: Sync all models
+[2025-02-07T10:07:08.678Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:07:08.690Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:10:53.871Z] [32minfo[39m: Sync all models
+[2025-02-07T10:10:53.925Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:10:53.935Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:11:01.431Z] [32minfo[39m: Starting user registration...
+[2025-02-07T10:11:01.472Z] [31merror[39m: User with email taiwo@gmail.com already exists.
+[2025-02-07T10:11:01.597Z] [31merror[39m: AppError in Unexpected error during signup for email taiwo@gmail.com: User with provided email already exists: User with provided email already exists
+[2025-02-07T10:11:01.607Z] [31merror[39m: Error during user registration: User with provided email already exists
+[2025-02-07T10:13:12.256Z] [32minfo[39m: Sync all models
+[2025-02-07T10:13:17.644Z] [32minfo[39m: Sync all models
+[2025-02-07T10:13:17.703Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:13:17.712Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:13:31.559Z] [32minfo[39m: Sync all models
+[2025-02-07T10:13:31.620Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:13:31.631Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:13:46.847Z] [32minfo[39m: Sync all models
+[2025-02-07T10:13:46.898Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:13:46.907Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:13:53.634Z] [32minfo[39m: Starting user registration...
+[2025-02-07T10:13:53.861Z] [31merror[39m: User with email taiwo@gmail.com already exists.
+[2025-02-07T10:13:53.940Z] [31merror[39m: AppError in Unexpected error during signup for email taiwo@gmail.com: User with provided email: taiwo@gmail.com already exists: User with provided email: taiwo@gmail.com already exists
+[2025-02-07T10:13:54.010Z] [31merror[39m: Error during user registration: User with provided email: taiwo@gmail.com already exists
+[2025-02-07T10:14:13.858Z] [32minfo[39m: Sync all models
+[2025-02-07T10:14:13.910Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:14:13.920Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:14:24.037Z] [32minfo[39m: Sync all models
+[2025-02-07T10:14:24.088Z] [32minfo[39m: Database connected successfully
+[2025-02-07T10:14:24.103Z] [32minfo[39m: Server started on port: 5001
+[2025-02-07T10:15:51.320Z] [32minfo[39m: Starting user registration...
+[2025-02-07T10:15:51.454Z] [31merror[39m: User with email taiwo@gmail.com already exists.
+[2025-02-07T10:15:51.456Z] [31merror[39m: AppError in Unexpected error during signup for email taiwo@gmail.com: User with provided email:taiwo@gmail.com already exists: User with provided email:taiwo@gmail.com already exists
+[2025-02-07T10:15:51.458Z] [31merror[39m: Error during user registration: User with provided email:taiwo@gmail.com already exists
+[2025-02-08T04:19:01.018Z] [32minfo[39m: Sync all models
+[2025-02-08T04:19:01.158Z] [32minfo[39m: Database connected successfully
+[2025-02-08T04:19:01.164Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T04:55:45.069Z] [32minfo[39m: Starting user login...
+[2025-02-08T04:55:45.951Z] [31merror[39m: Unexpected error in Unexpected error during login keys is not defined: keys is not defined
+[2025-02-08T04:58:20.085Z] [32minfo[39m: Sync all models
+[2025-02-08T04:58:20.408Z] [32minfo[39m: Database connected successfully
+[2025-02-08T04:58:20.415Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T04:58:43.440Z] [32minfo[39m: Starting user login...
+[2025-02-08T04:58:44.517Z] [32minfo[39m: user authenticated and login token generated
+[2025-02-08T04:59:53.922Z] [32minfo[39m: Sync all models
+[2025-02-08T04:59:54.119Z] [32minfo[39m: Database connected successfully
+[2025-02-08T04:59:54.223Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T05:00:11.533Z] [32minfo[39m: Sync all models
+[2025-02-08T05:00:11.583Z] [32minfo[39m: Database connected successfully
+[2025-02-08T05:00:11.605Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T05:00:18.123Z] [32minfo[39m: Starting user login...
+[2025-02-08T05:00:18.970Z] [32minfo[39m: user authenticated and login token generated
+[2025-02-08T05:01:27.465Z] [32minfo[39m: Sync all models
+[2025-02-08T05:01:27.533Z] [32minfo[39m: Database connected successfully
+[2025-02-08T05:01:27.570Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T05:01:45.038Z] [32minfo[39m: Sync all models
+[2025-02-08T05:01:45.107Z] [32minfo[39m: Database connected successfully
+[2025-02-08T05:01:45.118Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T05:02:18.280Z] [32minfo[39m: Sync all models
+[2025-02-08T05:02:18.424Z] [32minfo[39m: Database connected successfully
+[2025-02-08T05:02:18.492Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T05:02:57.009Z] [32minfo[39m: Sync all models
+[2025-02-08T05:02:57.059Z] [32minfo[39m: Database connected successfully
+[2025-02-08T05:02:57.068Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T05:04:01.918Z] [32minfo[39m: Sync all models
+[2025-02-08T05:04:01.973Z] [32minfo[39m: Database connected successfully
+[2025-02-08T05:04:01.980Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T05:04:11.633Z] [32minfo[39m: Sync all models
+[2025-02-08T05:04:11.682Z] [32minfo[39m: Database connected successfully
+[2025-02-08T05:04:11.694Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T05:04:52.950Z] [32minfo[39m: Sync all models
+[2025-02-08T05:04:53.010Z] [32minfo[39m: Database connected successfully
+[2025-02-08T05:04:53.018Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T05:05:25.826Z] [32minfo[39m: Sync all models
+[2025-02-08T05:05:25.878Z] [32minfo[39m: Database connected successfully
+[2025-02-08T05:05:25.889Z] [32minfo[39m: Server started on port: 5001
+[2025-02-08T05:57:13.904Z] [32minfo[39m: Starting user login...
+[2025-02-08T05:57:14.638Z] [32minfo[39m: user authenticated and login token generated
+[2025-02-08T05:57:14.639Z] [32minfo[39m: User logged in successfully
