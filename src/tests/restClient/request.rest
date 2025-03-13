@@ -1,0 +1,3 @@
+###// Test the root test
+
+GET http://localhost:5001/test

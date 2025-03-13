@@ -163,3 +163,81 @@
 [2025-02-08T05:57:13.904Z] [32minfo[39m: Starting user login...
 [2025-02-08T05:57:14.638Z] [32minfo[39m: user authenticated and login token generated
 [2025-02-08T05:57:14.639Z] [32minfo[39m: User logged in successfully
+[2025-02-10T10:42:01.523Z] [32minfo[39m: Sync all models
+[2025-02-10T10:42:02.441Z] [32minfo[39m: Database connected successfully
+[2025-02-10T10:42:02.449Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T11:04:39.455Z] [32minfo[39m: Sync all models
+[2025-02-10T11:04:39.759Z] [32minfo[39m: Database connected successfully
+[2025-02-10T11:04:39.823Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T11:07:42.993Z] [32minfo[39m: Sync all models
+[2025-02-10T11:07:43.509Z] [32minfo[39m: Database connected successfully
+[2025-02-10T11:07:43.517Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T11:19:09.911Z] [32minfo[39m: Sync all models
+[2025-02-10T11:19:14.060Z] [32minfo[39m: Database connected successfully
+[2025-02-10T11:19:14.549Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T12:27:57.952Z] [32minfo[39m: Sync all models
+[2025-02-10T12:27:58.646Z] [32minfo[39m: Database connected successfully
+[2025-02-10T12:27:58.654Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T12:30:25.018Z] [32minfo[39m: Sync all models
+[2025-02-10T12:30:25.078Z] [32minfo[39m: Database connected successfully
+[2025-02-10T12:30:25.086Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T12:30:31.222Z] [32minfo[39m: Sync all models
+[2025-02-10T12:30:31.278Z] [32minfo[39m: Database connected successfully
+[2025-02-10T12:30:31.286Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T12:51:29.877Z] [32minfo[39m: Sync all models
+[2025-02-10T12:51:29.929Z] [32minfo[39m: Database connected successfully
+[2025-02-10T12:51:29.937Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T12:53:16.360Z] [32minfo[39m: Sync all models
+[2025-02-10T12:53:16.414Z] [32minfo[39m: Database connected successfully
+[2025-02-10T12:53:16.423Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T12:54:06.863Z] [32minfo[39m: Sync all models
+[2025-02-10T12:54:06.909Z] [32minfo[39m: Database connected successfully
+[2025-02-10T12:54:06.918Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T12:54:16.626Z] [32minfo[39m: Sync all models
+[2025-02-10T12:54:16.677Z] [32minfo[39m: Database connected successfully
+[2025-02-10T12:54:16.685Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:00:27.671Z] [32minfo[39m: Sync all models
+[2025-02-10T13:00:27.731Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:00:27.740Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:01:28.513Z] [32minfo[39m: Sync all models
+[2025-02-10T13:01:28.571Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:01:28.579Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:02:04.406Z] [32minfo[39m: Sync all models
+[2025-02-10T13:02:04.705Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:02:04.710Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:04:02.160Z] [32minfo[39m: Sync all models
+[2025-02-10T13:04:02.429Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:04:02.483Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:05:14.839Z] [32minfo[39m: Sync all models
+[2025-02-10T13:05:14.890Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:05:14.909Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:05:24.513Z] [32minfo[39m: Sync all models
+[2025-02-10T13:05:24.564Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:05:24.571Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:05:41.909Z] [32minfo[39m: Sync all models
+[2025-02-10T13:05:41.961Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:05:41.970Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:06:10.010Z] [32minfo[39m: Sync all models
+[2025-02-10T13:06:10.060Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:06:10.068Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:06:17.823Z] [32minfo[39m: Sync all models
+[2025-02-10T13:06:17.873Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:06:17.880Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:06:50.949Z] [32minfo[39m: Sync all models
+[2025-02-10T13:06:51.135Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:06:51.189Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:07:21.057Z] [32minfo[39m: Sync all models
+[2025-02-10T13:07:21.276Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:07:21.541Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:07:51.024Z] [32minfo[39m: Sync all models
+[2025-02-10T13:07:51.206Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:07:51.244Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:08:34.637Z] [32minfo[39m: Sync all models
+[2025-02-10T13:08:35.013Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:08:35.127Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:08:55.757Z] [32minfo[39m: Sync all models
+[2025-02-10T13:08:55.866Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:08:55.913Z] [32minfo[39m: Server started on port: 5001
+[2025-02-10T13:20:27.286Z] [32minfo[39m: Sync all models
+[2025-02-10T13:20:29.829Z] [32minfo[39m: Database connected successfully
+[2025-02-10T13:20:29.836Z] [32minfo[39m: Server started on port: 5001

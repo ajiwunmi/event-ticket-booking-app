@@ -6,15 +6,24 @@ import {sequelize} from "./database/index.js";
 import userRoutes from "./routes/userRoute.js";
 import { errorHandler } from "./middlewares/errorMiddleware.js"; 
 import logger from "./utils/logger.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
 
 // Add Middlewares
 app.use(cors());
 app.use(express.json());
+app.use(cookieParser())
 
 // Routes
 app.use("/api/v1/users", userRoutes);
+
+
+//Test Route
+app.get('/test', (req,res)=>{
+	res.status(200).json({message: 'Testing the test module'})
+});
+
 
 // Global Error Handler Middleware
 app.use(errorHandler);

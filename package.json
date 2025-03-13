@@ -1,32 +1,47 @@
 {
-  "name": "event-ticket-booking-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "nodemon src/index.js",
-    "test": "jest"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^5.1.1",
-    "body-parser": "^1.20.3",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "express-rate-limit": "^7.5.0",
-    "joi": "^17.13.3",
-    "jsonwebtoken": "^9.0.2",
-    "pg": "^8.13.1",
-    "sequelize": "^6.37.5",
-    "winston": "^3.17.0"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0",
-    "nodemon": "^3.1.9",
-    "supertest": "^7.0.0"
-  }
+	"name": "event-ticket-booking-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "nodemon src/index.js",
+		"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watchAll"
+	},
+	"jest": {
+		"setupFilesAfterEnv": [
+			"<rootDir>/src/tests/setup/setupTest.js"
+		],
+		"transform": {
+			"\\.[jt]sx?$": "babel-jest"
+		}
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.1.1",
+		"body-parser": "^1.20.3",
+		"cookie-parser": "^1.4.7",
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.7",
+		"event-ticket-booking-app": "file:",
+		"express": "^4.21.2",
+		"express-rate-limit": "^7.5.0",
+		"joi": "^17.13.3",
+		"jsonwebtoken": "^9.0.2",
+		"pg": "^8.13.1",
+		"sequelize": "^6.37.5",
+		"winston": "^3.17.0"
+	},
+	"devDependencies": {
+		"@babel/preset-env": "^7.26.9",
+		"@babel/preset-react": "^7.26.3",
+		"@babel/preset-typescript": "^7.26.0",
+		"@babel/register": "^7.25.9",
+		"babel-jest": "^29.7.0",
+		"jest": "^29.7.0",
+		"nodemon": "^3.1.9",
+		"supertest": "^7.0.0"
+	}
 }
